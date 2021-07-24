@@ -1,0 +1,119 @@
+.top-btn{
+  display: flex;
+  position: absolute;
+  top: calc(70%);
+  left: calc(50%);
+  margin: auto;
+  column-gap: 30px;
+  transform: translate(-50%, 50%);
+}
+
+.neon-tbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.neon-tbtn a {
+  position: relative;
+  margin: 0 15px;
+  padding: 15px 30px;
+  color: #d3ebfbc9;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 3px;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.neon-tbtn a:hover {
+  background: #21cbff;
+  color: #000;
+  box-shadow: 0 0 50px #21cbff;
+  transition-delay: 0.5s;
+}
+
+/* ボタン左上のカッコ */
+.neon-tbtn a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #21cbff;
+  border-left: 2px solid #21cbff;
+  content: "";
+  transition: 0.5s;
+}
+
+/* ボタン右下のカッコ */
+.neon-tbtn a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #21cbff;
+  border-bottom: 2px solid #21cbff;
+  content: "";
+  transition: 0.5s;
+}
+
+/* ボタン左上のカッコがホバーで伸びる */
+.neon-tbtn a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+/* ボタン右下のカッコがホバーで伸びる */
+.neon-tbtn a:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.neon-tbtn:last-of-type a{
+  color: #eee;
+}
+
+.neon-tbtn:last-of-type a:hover{
+  background: #aaa;
+  color: #171717;
+  box-shadow: 0 0 50px #888;
+  transition-delay: 0.5s;
+}
+
+.neon-tbtn:last-of-type a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #888;
+  border-left: 2px solid #888;
+  content: "";
+  transition: 0.5s;
+}
+
+.neon-tbtn:last-of-type a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #888;
+  border-bottom: 2px solid #888;
+  content: "";
+  transition: 0.5s;
+}
+
+.neon-tbtn:last-of-type a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+/* ボタン右下のカッコがホバーで伸びる */
+.neon-tbtn:last-of-type a:hover::after {
+  width: 100%;
+  height: 100%;
+}
